@@ -10,32 +10,54 @@
   <!-- Stylesheets -->
 
   <!-- Bootstrap 5.0 -->
-  <link rel="stylesheet" type="text/css" href="bootstrap-5.0.1-dist/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../bootstrap-5.0.1-dist/css/bootstrap.css">
   <!-- Style.css -->
-  <link rel="stylesheet" type="text/css" href="Main Pages/style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <!-- Fontawesome -->
-  <link href="fontawesome-free-5.15.4-web\fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
-
+  <link href="../fontawesome-free-5.15.4-web\fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
 
   <!-- Google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Sarala font -->
   <link href="https://fonts.googleapis.com/css2?family=Sarala&display=swap" rel="stylesheet">
 
   <!-- Javascript and JQuery -->
+
+  <!--JQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Bootstrap 5.0 -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
   <!-- Clock -->
-  <script src="Main Pages/clock.js"></script>
+  <script src="clock.js"></script>
+
+  <!-- View more/View less button -->
+  <script>
+    function myFunction() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "View more";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "View less";
+      moreText.style.display = "inline";
+    }
+    }
+  </script>
 </head>
 <body>
-
   <!-- Main navigation bar for EPL website -->
   <nav class="navbar navbar-expand-lg navbar-light bg-color">
     <div class="container-fluid">
       <span class="navbar-brand mb-1 me-5 mx-3 h1">
         <!-- EPL Logo -->
-        <img src="Pictures/epro.jpg" alt="E Pro Landscape" width="" height="">
+        <img src="../Pictures/epro.jpg" alt="E Pro Landscape" width="" height="">
       </span>
       <!-- Collapse and dropdown toggle -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDrop" aria-controls="navbarDrop" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,6 +70,7 @@
           <a class="nav-link text-center me-4" href="information.html">Information</a>
           <a class="nav-link text-center me-4" href="contactus.html">Contact Us</a>
           <a class="nav-link text-center me-4" href="aboutus.html">About Us</a>
+          <a class="nav-link text-center me-4" href="references.html">References</a>
         </div>
         <!-- Clock -->
         <li class="nav-link text-center">
@@ -57,62 +80,42 @@
     </div>
   </nav>
 
-  <div class="container-fluid" style="margin-bottom: 5%;">
-    <div class="row" style="margin-top: 2%; margin-bottom: 2%">
-      <div class="shade col-xxl-10 col-xl-10 col-lg-10 col-md-12 col-sm-12 col-xs-12 offset-xxl-1 offset-xl-1 offset-lg-1">
+  <div class="container-fluid main-page">
+    <div class="row first-row">
+      <div class="shade page-padding col-xxl-10 col-xl-10 col-lg-10 col-md-12 col-sm-12 col-xs-12 offset-xxl-1 offset-xl-1 offset-lg-1">
         <!-- Welcome to website -->
-        <h1 class="text-center" style="margin-top: 2%;">Welcome to the Etienne Pro Landscaping Website.</h1>
-          <!-- Picture of daddy with lawn mower -->
-          <img style="width: 60%;" class="img-fluid mx-auto d-block" id="lawn" src="Pictures/lawn4.jpeg">
+        <h1 class="text-center heading">Welcome to the Etienne Pro Landscaping Website.</h1>
+          <!-- Picture of Keany with lawn mower -->
+          <img class="img-fluid mx-auto d-block" id="lawn" src="../Pictures/MainEPLPicture.jpg">
         <!-- Motto -->
-        <h1 class="text-center" style="margin-bottom: 2%;">We Set the Standard for Quality Lawn Care.</h1>
-        <!-- Description of website and mainpage -->
-        <p class="text-center" style="margin-bottom: 6%;">
-          This is the main page of the EPL website! This is where we display our pictures of our work and services, and our customer reviews.
-        </p>
+        <h1 class="text-center heading">We Set the Standard for Quality Lawn Care.</h1>
 
-        <!-- Pictures of daddy doing lawn service -->
-        <div class="row" style="margin-bottom: 3%;">
-          <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <img src="Pictures/lawn1.jpeg" width="100%;">
+        <!-- Pictures of Keany and lawn service -->
+        <div class="row second-row">
+          <div class="margin-3ptb col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <img src="../Pictures/Lawn Pictures/Playground.png" id="pictures">
           </div>
-          <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <img src="Pictures/lawn1.jpeg" width="100%;">
+          <div class="margin-3ptb col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <img src="../Pictures/Lawn Pictures/Lawnmower.png" id="pictures">
           </div>
-          <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <img src="Pictures/lawn1.jpeg" width="100%;">
+          <div class="margin-3ptb col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <img src="../Pictures/Lawn Pictures/Lawn.png" id="pictures">
           </div>
-          <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <img src="Pictures/lawn1.jpeg" width="100%;">
+          <div class="margin-3ptb col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <img src="../Pictures/Lawn Pictures/Mulch.png" id="pictures">
           </div>
-
           <!-- Description of pictures -->
-          <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-top: 3%;">
-            <p>
-              When it comes to quality and reliability, Etienne Pro Landscaping leads the way. After all, it's our goal to make your lawn look its very best, all year long. Serving the Treasure Cost communities since 2007, we take great pride in all our services. Count on us to tailor whatever you desire to match the season. Whether it's lawn mowing, leaf blowing or a complete landscape redesign, we have the staff to tackle it all.
-            </p>
-          </div>
-        </div>
-
-        <!-- Interview (maybe) -->
-        <div class="row" style="margin-bottom: 3%;">
-          <div class="col-xxl-7 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <!-- Video of interview -->
-            <video width="100%" height="100%" controls>
-              <source src="Videos\S01E01-In This World Filled With Light [9EDCDB7A].1080.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="col-xxl-5 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <!-- Description of interview -->
-            <p>
-              When it comes to quality and reliability, Etienne Pro Landscaping leads the way. After all, it's our goal to make your lawn look its very best, all year long. Serving the Treasure Cost communities since 2007, we take great pride in all our services. Count on us to tailor whatever you desire to match the season. Whether it's lawn mowing, leaf blowing or a complete landscape redesign, we have the staff to tackle it all.
+          <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <p class="main-page-opening">
+              This is the main page of the EPL website! This is where we display pictures of our work and customer reviews! Above this, we have displayed pictures of our accomplished work. We have demonstrated to our customers time and time again with our efforts and loyalty, and the results show it. And below this are the five top reviews, and below that are the rest of the customer reviews. This website is mainly informational. We provide information describing our services, what we offer, and why you can trust us. If you ever want your lawn treated in a timely and professtional manner, or if you have any questions, comments, or concerns about the Etienne Pro Landscaping website, you can go to the "Contact Us" page and do so there. We would love to hear from you!
             </p>
           </div>
         </div>
 
         <!-- Carousel of customer reviews -->
-        <div class="row" style="margin-bottom: 3%;">
-          <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-10 col-xs-12 offset-xxl-2 offset-xl-2 offset-lg-2 offset-md-2 offset-sm-1">
+        <div class="row third-row">
+          <div style="margin-top: 3%;" class="col-xxl-10 col-xl-10 col-lg-10 col-md-10 col-sm-12 col-xs-12 offset-xxl-1 offset-xl-1 offset-lg-1 offset-md-1">
+            <h1 class="text-center review-heading">Top Reviews</h1>
             <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
               <!-- Carousel slides and buttons -->
               <div class="carousel-indicators">
@@ -123,15 +126,15 @@
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <!-- Picture of review -->
-                  <img src="review.jpeg" width="80%;" class="img-fluid w-100" alt="...">
+                  <img src="../Pictures/Reviews/Gwen_s-Review.jpeg" class="img-fluid" alt="...">
                 </div>
                 <div class="carousel-item">
                   <!-- Picture of review -->
-                  <img src="Pictures/lawn2.jpeg" class="img-fluid" alt="...">
+                  <img src="../Pictures/Reviews/Steve_s-Review.jpeg" class="img-fluid" alt="...">
                 </div>
                 <div class="carousel-item">
                   <!-- Picture of review -->
-                  <img src="Pictures/lawn3.jpeg" class="img-fluid" alt="...">
+                  <img src="../Pictures/Reviews/Brittany_s-Review.jpeg" class="img-fluid" alt="...">
                 </div>
               </div>
               <!-- Carousel controls -->
@@ -146,6 +149,328 @@
             </div>
           </div>
         </div>
+
+
+        <div class="row justify-content-center">
+          <div class="main-page col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <table style="height: 100%;" class="table table-borderless">
+              <tbody>
+                <tr>
+                  <td>Communication</td>
+                  <td>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Customer Service</td>
+                  <td>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Lawn Service</td>
+                  <td>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Pricing</td>
+                  <td>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Recommendations</td>
+                  <td>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="main-page col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <table class="table table-borderless">
+              <tr>
+                <td class="text-center">Overall Rating</td>
+                <td class="text-center">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </td>
+              </tr>
+            </table>
+
+            <p class="text-center">5 average based on 7 reviews.</p>
+
+            <hr style="border:6px solid black">
+
+            <div class="row">
+              <div class="side">
+                <div>5 star</div>
+              </div>
+              <div class="middle">
+                <div class="bar-container">
+                  <div class="bar-5"></div>
+                </div>
+              </div>
+              <div class="side right">
+                <div>7</div>
+              </div>
+              <div class="side">
+                <div>4 star</div>
+              </div>
+              <div class="middle">
+                <div class="bar-container">
+                  <div class="bar-4"></div>
+                </div>
+              </div>
+              <div class="side right">
+                <div>0</div>
+              </div>
+              <div class="side">
+                <div>3 star</div>
+              </div>
+              <div class="middle">
+                <div class="bar-container">
+                  <div class="bar-3"></div>
+                </div>
+              </div>
+              <div class="side right">
+                <div>0</div>
+              </div>
+              <div class="side">
+                <div>2 star</div>
+              </div>
+              <div class="middle">
+                <div class="bar-container">
+                  <div class="bar-2"></div>
+                </div>
+              </div>
+              <div class="side right">
+                <div>0</div>
+              </div>
+              <div class="side">
+                <div>1 star</div>
+              </div>
+              <div class="middle">
+                <div class="bar-container">
+                  <div class="bar-1"></div>
+                </div>
+              </div>
+              <div class="side right">
+                <div>0</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h3>Review Section</h3>
+            <hr>
+            <div style="margin: 4% 0 0 0;" class="message">
+              <div class="text-center first-row">
+                <span class="review">
+                  Name: Janet
+                </span>
+                <span class="review">
+                  Location: Sebastian
+                </span>
+                <span class="descrp">
+                  Company Description:&nbsp;&nbsp;&nbsp;&nbsp;Customer Friendly
+                </span>
+                <span class="rate">
+                  Rating:
+                </span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+              </div>
+              <p class="review-words">I would recommend EPL to everyone. They are easy to contact and always respond. Their work and knowledge are exceptional.</p>
+            </div>
+
+            <div style="margin: 4% 0 0 0;" class="message">
+              <div class="text-center first-row">
+                <span class="review">
+                  Name: Lori
+                </span>
+                <span class="review">
+                  Location: Sebastian
+                </span>
+                <span class="descrp">
+                  Company Description:&nbsp;&nbsp;&nbsp;&nbsp;Great Company
+                </span>
+                <span class="rate">
+                  Rating:
+                </span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+              </div>
+              <p class="review-words">We have been customers for 3 <small class="align-top">1/2</small> years. Service is good and Keany works very hard. If we have a special job/request he will take care of it for us.</p>
+            </div>
+
+            <div style="margin: 4% 0 0 0" class="message">
+              <div class="text-center first-row">
+                <span class="review">
+                  Name: Lisa
+                </span>
+                <span class="review">
+                  Location: Sebastian
+                </span>
+                <span class="descrp">
+                  Company Description:&nbsp;&nbsp;&nbsp;&nbsp;Honest-friendly
+                </span>
+                <span class="rate">
+                  Rating:
+                </span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+              </div>
+              <p class="review-words">We've had Keany for almost a year now. He is an honest man and always shows up to keep our yards looking fresh and clean. He's very easy to talk to about any questions or lawn concerns.</p>
+            </div>
+
+            <span style="display: none;" id="more">
+
+              <div style="margin: 4% 0 0 0" class="message">
+                <div class="text-center" style="margin: 2% 0 2% 0">
+                  <span style="word-spacing: 10px; margin-right: 5%; color: white;">
+                    Name: Brittany
+                  </span>
+                  <span style="margin-right: 5%; color: white;">
+                    Location:&nbsp;&nbsp;&nbsp;&nbsp;Vero Beach
+                  </span>
+                  <span style="margin-right: 5%; color: white;">
+                    Company Description:&nbsp;&nbsp;&nbsp;&nbsp;Awesome Service!
+                  </span>
+                  <span style="word-spacing: 10px; color: white;">
+                    Rating:
+                  </span>
+                  <span style="font-size: 20px;" class="fa fa-star checked"></span>
+                  <span style="font-size: 20px;" class="fa fa-star checked"></span>
+                  <span style="font-size: 20px;" class="fa fa-star checked"></span>
+                  <span style="font-size: 20px;" class="fa fa-star checked"></span>
+                  <span style="font-size: 20px;" class="fa fa-star checked"></span>
+                </div>
+                <p style="margin: 3% 0 2% 0">Keany’s lawn care is absolutely wonderful! They always show up on time, do a beautiful job on the lawn and go above and beyond to be there for their customers! Keany is a wonderful man of integrity & kindness who loves his family and his clients. It’s an absolute joy and pleasure to work with EPL and I can’t recommend them highly enough!</p>
+              </div>
+
+              <div style="margin: 4% 0 0 0" class="message">
+                <div class="text-center" style="margin: 2% 0 2% 0">
+                  <span style="word-spacing: 10px; margin-right: 5%; color: white;">
+                    Name: Steve
+                  </span>
+                  <span style="word-spacing: 10px; margin-right: 5%; color: white;">
+                    Location: Sebastian
+                  </span>
+                  <span style="margin-right: 5%; color: white;">
+                    Company Description:&nbsp;&nbsp;&nbsp;&nbsp;Above & Behind
+                  </span>
+                  <span style="word-spacing: 10px; color: white;">
+                    Rating:
+                  </span>
+                  <span style="font-size: 20px;" class="fa fa-star checked"></span>
+                  <span style="font-size: 20px;" class="fa fa-star checked"></span>
+                  <span style="font-size: 20px;" class="fa fa-star checked"></span>
+                  <span style="font-size: 20px;" class="fa fa-star checked"></span>
+                  <span style="font-size: 20px;" class="fa fa-star checked"></span>
+                </div>
+                <p style="margin: 3% 0 2% 0">I would give more than five stars if I could. Keany is the best. Any request we have made was honored. We have also asked him for some help above & beyond standard lawn care and he has been able to accommodate or refer us to someone that could. Seriously the best lawn service I have had in my life.
+                </p>
+              </div>
+
+              <div style="margin: 4% 0 0 0" class="message">
+                <div class="text-center" style="margin: 2% 0 2% 0">
+                  <span style="word-spacing: 10px; margin-right: 5%; color: white;">
+                    Name: Ronda
+                  </span>
+                  <span style="word-spacing: 10px; margin-right: 5%; color: white;">
+                    Location: Sebastian
+                  </span>
+                  <span style="margin-right: 5%; color: white;">
+                    Company Description:&nbsp;&nbsp;&nbsp;&nbsp;Customer-friendly
+                  </span>
+                  <span style="word-spacing: 10px; color: white;">
+                    Rating:
+                  </span>
+                  <span style="font-size: 20px;" class="fa fa-star checked"></span>
+                  <span style="font-size: 20px;" class="fa fa-star checked"></span>
+                  <span style="font-size: 20px;" class="fa fa-star checked"></span>
+                  <span style="font-size: 20px;" class="fa fa-star checked"></span>
+                  <span style="font-size: 20px;" class="fa fa-star checked"></span>
+                </div>
+                <p style="margin: 3% 0 2% 0">I have been a customer since 2012 October and Etienne Pro has always helped me with special projects when asked. They really care about what they do and very customer friendly. I have recommended them to friends in the past and Etienne has helped them when needed.</p>
+              </div>
+
+              <div style="margin: 4% 0 0 0" class="message">
+                <div class="text-center" style="margin: 2% 0 2% 0">
+                  <span style="word-spacing: 10px; margin-right: 5%; color: white;">
+                    Name: Gwen
+                  </span>
+                  <span style="margin-right: 5%; color: white;">
+                    Location:&nbsp;&nbsp;&nbsp;&nbsp;Vero Beach
+                  </span>
+                  <span style="margin-right: 5%; color: white;">
+                    Company Description:&nbsp;&nbsp;&nbsp;&nbsp;Very Reliable
+                  </span>
+                  <span style="word-spacing: 10px; color: white;">
+                    Rating:
+                  </span>
+                  <span style="font-size: 20px;" class="fa fa-star checked"></span>
+                  <span style="font-size: 20px;" class="fa fa-star checked"></span>
+                  <span style="font-size: 20px;" class="fa fa-star checked"></span>
+                  <span style="font-size: 20px;" class="fa fa-star checked"></span>
+                  <span style="font-size: 20px;" class="fa fa-star checked"></span>
+                </div>
+                <p style="margin: 3% 0 2% 0">Keany from EPL is a very reliable person. You can count on him to be timely in showing up to cut your lawn. If he gets behind because of rain he will contact you to let you know. He is thorough with your lawn, so it always looks nice. He is customer friendly and offers a very fair price. Best lawn service ever and a great friend now!</p>
+              </div>
+
+            </span>
+
+            <span id="dots"></span>
+
+              <button onclick="myFunction()" id="myBtn" class="btn" style="background-color: rgb(237,233,221); border: none; margin: 3% 0 3% 3%; font-size: 16px;">View more</button>
+
+
+
+          </div>
+
+        </div>
+
+
+
+
       </div>
     </div>
   </div>
@@ -165,8 +490,9 @@
       </section>
       <!-- Contact us and about us links -->
       <section class="links" style="margin-bottom: 1%;">
-        <a href="aboutus.html" class="btn m-2">About Us</a>
+        <a href="aboutus.html" class="btn m-1">About Us</a>
         <a href="contactus.html" class="btn m-1">Contact Us </a>
+        <a href="references.html" class="btn m-1">References </a>
       </section>
       <!-- Copyright -->
       <section style="margin-bottom: 1%;">
