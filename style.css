@@ -1,0 +1,361 @@
+/* Body */
+
+body {
+  /* background-image: linear-gradient(to right, green, yellow); */
+  background-image: url(../Pictures/grass.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  /* Body font */
+  font-family: 'Sarala', sans-serif;
+}
+
+
+
+/* Nav bar */
+
+/* Navbar backhround-color */
+.bg-color {
+  background-color: rgb(237,233,221);
+}
+
+/* Active Tab */
+nav > div.container-fluid > div.collapse > div.navbar-nav > a.active2 {
+  color: white;
+  background-color: #4b9955;
+  border-radius: 5px;
+}
+
+/* Border-radius for nav-links */
+nav > div.container-fluid > div.collapse > div.navbar-nav > a {
+  border-radius: 5px;
+}
+
+/* Nav-link styles */
+nav > div.container-fluid > div.collapse > li {
+  color: white;
+  background-color: #4b9955;
+  border-radius: 5px;
+  font-size: 16.5px;
+}
+
+/* Hover attribute for nav-links */
+nav > div.container-fluid > div.collapse > div.navbar-nav > a:hover {
+  background-color: #3c7343;
+  border-radius: 5px;
+  color: white;
+}
+
+/* Active click attribute for nav-links */
+nav > div.container-fluid > div.collapse > div.navbar-nav > a:active {
+  color: #adadad;
+}
+
+
+
+/* Footer */
+
+/* Footer styles */
+footer {
+  position: absolute;
+  width: 100%;
+  background-color: rgb(237,233,221);
+}
+
+/* Footer link styles */
+footer > div.p-3 > section.links > a {
+  background-color: #4b9955;
+  color: white;
+}
+
+/* Hover attribute for footer links */
+footer > div.p-3 > section.links > a:hover {
+  background-color: #3c7343;
+}
+
+/* Active attribute for footer links */
+footer > div.p-3 > section.links > a:active {
+  color: #adadad;
+}
+
+
+
+/* Grid container/Columns styles */
+
+.shade {
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 10px;
+}
+
+.main-page {
+  margin: 0 0 5% 0;
+}
+
+.first-row {
+  margin: 2% 0 2% 0;
+}
+
+.second-row {
+  margin: 5% 0 3% 0;
+}
+
+.third-row {
+  margin: 0 0 10% 0;
+}
+
+.page-padding {
+  padding: 0 2.5% 0 2.5%;
+}
+
+.fourth-row {
+  margin: 0 0 3% 0;
+}
+
+.fifth-row {
+  margin: 4% 0 0 0;
+}
+
+
+
+/* Table styles */
+
+td {
+  color: white;
+  font-size: 18px;
+}
+
+
+
+/* Link styles */
+
+a {
+  text-decoration-line: none;
+  color: white;
+}
+
+a:hover {
+  color: white;
+}
+
+a:active {
+  color: #a8a7a7;
+}
+
+a.hover:hover {
+  color: #c9c9c9
+}
+
+a.active:active {
+  color: #a8a7a7;
+}
+
+
+
+/* Picture styles */
+
+#lawn {
+  margin: 2% 2% 2% 2%;
+  padding: 0 0 0 0;
+  width: 60%;
+  height: auto;
+}
+
+#pictures {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1400px) {
+  #lawn {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #lawn {
+    width: 100%;
+  }
+}
+
+
+
+/* Heading styles */
+
+h1.text-center {
+  color: white;
+}
+
+.heading {
+  margin: 2% 0 2% 0;
+}
+
+.review-heading {
+  margin: 0 0 5% 0;
+}
+
+h3 {
+  color: white;
+}
+
+
+
+/* Text styles */
+
+p {
+  color: white;
+}
+
+.main-page-opening {
+  font-size: 16px;
+  line-height: 2.3;
+  text-indent: 35px;
+}
+
+ul {
+  color: white;
+}
+
+p.review-words {
+  margin: 3% 0 2% 0;
+}
+
+small {
+  font-size: 13px;
+}
+
+
+
+/* Top Review styles */
+
+div.carousel {
+  border-radius: 0 0 0 0;
+}
+
+
+
+.white {
+  background-color: rgba(255,255,255, 0.5);
+  border-radius: 10px;
+}
+
+
+
+/* Message styles */
+
+.message {
+  border: 3px solid #dedede;
+  background-color: #4b9966;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.darker {
+  border-color: #ccc;
+  background-color: #ddd;
+}
+
+.message::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.message img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.message img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+div.message > div.first-row > span.review {
+  word-spacing: 10px;
+  margin: 0 5% 0 0;
+  color: white;
+}
+
+div.message > div.first-row > span.descrp {
+  margin: 0 5% 0 0;
+  color: white;
+}
+
+div.message > div.first-row > span.rate {
+  word-spacing: 10px;
+  color: white;
+}
+
+div.message > div.first-row > span.fa-star {
+  font-size: 20px;
+}
+
+
+
+/* Review Section styles */
+
+.fa {
+  font-size: 25px;
+}
+
+.checked {
+  color: orange;
+}
+
+/* Three column layout */
+.side {
+  float: left;
+  width: 15%;
+  margin-top:10px;
+  color: white;
+}
+
+.middle {
+  margin-top:10px;
+  float: left;
+  width: 70%;
+}
+
+/* Place text to the right */
+.right {
+  text-align: right;
+  color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The bar container */
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+}
+
+/* Individual bars */
+.bar-5 {width: 100%; height: 18px; background-color: #04AA6D;}
+.bar-4 {width: 0%; height: 18px; background-color: #2196F3;}
+.bar-3 {width: 0%; height: 18px; background-color: #00bcd4;}
+.bar-2 {width: 0%; height: 18px; background-color: #ff9800;}
+.bar-1 {width: 0%; height: 18px; background-color: #f44336;}
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+  .side, .middle {
+    width: 100%;
+  }
+  .right {
+    display: none;
+  }
+}
