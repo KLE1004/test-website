@@ -29,9 +29,6 @@
   <!-- Bootstrap 5.0 -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-  <!-- Clock -->
-  <script src="CSS-and-Clock.js/clock.js"></script>
-
   <!-- View more/View less button -->
   <script>
     function myFunction() {
@@ -51,13 +48,15 @@
     }
   </script>
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
   <!-- Main navigation bar for EPL website -->
   <nav class="navbar navbar-expand-lg navbar-light bg-lawn-color">
-    <div class="container-fluid">
+    <div class="container-lg">
       <span class="navbar-brand mb-1 me-5 mx-3 h1">
         <!-- EPL Logo -->
-        <img src="Pictures/Others/epro-logo.jpg" alt="E Pro Landscape">
+        <a class="navbar-brand" href="index.html">
+          <img src="Pictures/Others/epro-logo.jpg" alt="E Pro Landscape">
+        </a>
       </span>
       <!-- Collapse and dropdown toggle -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDrop" aria-controls="navbarDrop" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,31 +65,182 @@
       <div class="collapse navbar-collapse" id="navbarDrop">
         <div class="navbar-nav me-auto  my-2 my-lg-0">
           <!-- Navlinks -->
-          <a class="nav-link text-center me-4 active2" href="index.html">Main Page</a>
-          <a class="nav-link text-center me-4" href="information.html">Information</a>
-          <a class="nav-link text-center me-4" href="contactus.html">Contact Us</a>
           <a class="nav-link text-center me-4" href="aboutus.html">About Us</a>
+          <a class="nav-link text-center me-4" href="services.html">Services</a>
+          <a class="nav-link text-center me-4" href="sales.html">Sales & Discounts</a>
+          <a class="nav-link text-center me-4" href="testimonials.html">Testimonials</a>
+          <a class="nav-link text-center me-4" href="contactus.html">Contact Us</a>
           <a class="nav-link text-center me-4" href="creditedmaterial.html">Credited Material</a>
         </div>
-        <!-- Clock -->
-        <li class="nav-link text-center">
-          <a id="clock"></a>
-        </li>
       </div>
     </div>
   </nav>
 
-  <div class="container-fluid main-page">
-    <div class="row">
-      <div class="shade page-padding col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <!-- Welcome to website -->
-        <h1 class="text-center heading">Welcome to the Etienne Pro Landscaping Website.</h1>
-          <!-- Picture of Keany with lawn mower -->
-          <img class="img-fluid mx-auto d-block" id="lawn" src="Pictures/Main-Page/epl-picture.jpg">
-        <!-- Motto -->
-        <h1 class="text-center heading">We Set the Standard for Quality Lawn Care.</h1>
+  <div id="carouselHero" class="carousel slide hero-slides" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div id="grad-1" class="carousel-inner" role="listbox">
+      <div class="carousel-item active hero">
+        <div class="row">
+          <div class="col-lg-4 carousel-caption">
+            <div class="caption">
+              <h4>We Set the Standard for Quality Lawn Care.</h4>
+              <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique nisl vitae luctus sollicitudin. Fusce consectetur sem eget dui tristique, ac posuere arcu varius."
+              <br>
+              <p>- Keany Etienne, <br>Owner of Etienne Pro Landscaping</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item trustworthy">
+          <div class="row">
+            <div class="col-lg-5 carousel-caption">
+              <div class="caption">
+                <h1 class="text-center" style="">We are licensed and insured!</h1>
+                <br>
+                <br>
+                <p>Our company is a licensed and insured business.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item services">
+            <div class="row">
+              <div class="col-lg-4 carousel-caption">
+                <div class="caption d-flex h-100 align-items-center justify-content-center">
+                  <h1>You name it, we can do it!</h1>
+                </div>
+              </div>
+              <div class="offset-lg-1 col-lg-5 carousel-caption">
+                <div class="caption">
+                  <h2 class="text-center">List of our services:</h2>
+                  <br>
+                  <p>
+                    <div class="row">
+                  <ul class="col-lg-6">
+                    <li>Hedge and Tree Trimming</li>
+                    <li>Weed Control</li>
+                    <li>Tree Care</li>
+                    <li>Pruning</li>
+                    <li>Flower Bed Upkeep</li>
+                  </ul>
+                  <ul class="col-lg-6">
+                    <li>Leaf Blowing and Ranking</li>
+                    <li>Branch Removal</li>
+                    <li>Mulch and Topsoil</li>
+                    <li>Landscape Renovation</li>
+                    <li>And more!</li>
+                  </ul>
+                </div>
+                </p>
+                </div>
+              </div>
+          </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselHero" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselHero" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
 
-        <!-- Pictures of Keany and lawn service -->
+
+
+
+  <div class="container-lg">
+    <div class="row">
+      <div class="col-xxl-12">
+        <div class="intro">
+          <h1 class="text-center" style="color: black; margin: 0 0 3% 0;">Welcome</h1>
+          <p style="color: black; font-size: 120%;">
+            We, at Etienne Pro Landscaping, provide first class lawn care and customer service to the people across Vero, Sebastian, and Fort Pierce.
+            <br>
+            <br>
+            Taking care of your lawn is our job and we take great pride in it.
+            <br>
+            <br>
+            Our staff are professionals when it comes to lawn care and maintennce.
+            <br>
+            <br>
+            We have demonstrated to customers that we are more than capable of providing great service and making your lawn look better than it did before, and our efforts yield successful results.
+            <br>
+            <br>
+            Our site provides information about our services, sales, discounts, and why you can trust us to take care of your lawn.
+            <br>
+            <br>
+            Have any questions or concerns? Do you want your lawn maintained in a timely and professtional manner? Give us a call at <a class="hover active" href="tel:+7725014546">772-501-4546</a>. If you prefer email, email us at <a class="hover active" href="mailto:eprolandscaping@gmail.com">eprolandscaping@gmail.com</a>.
+
+            </p>
+        </div>
+
+
+          <div class="col-xl-12 hello">
+            <p>sdgb</p>
+          </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+      <div class="container-fluid">
+        <div class="row back-img">
+          <div class="col-lg-3" style="padding: 40px 0;">
+            <a class="col-lg-11 d-flex flex-column mx-auto" href="services.html">
+            <img  width="100%" class="img-fluid d-flex flex-column mx-auto col-lg-12" src="Pictures/Information-Page/flower-picture.jpg">
+            </a>
+
+            <div class="text-center">
+              <button onclick="window.location.href='services.html'" type="button" class="btn btn-primary btn-lg mx-auto" style="margin: 30px 0 0 0; width: 70%;">Services</button>
+            </div>
+          </div>
+
+          <div class="col-lg-3" style="padding: 40px 0;">
+            <a class="col-lg-11 d-flex mx-auto" href="news.html">
+            <img width="90%" class="img-fluid d-flex flex-column mx-auto col-lg-12" src="Pictures/Information-Page/flower-picture.jpg">
+          </a>
+
+            <div class="text-center">
+              <button type="button" class="btn btn-primary btn-lg mx-auto" style="margin: 30px 0 0 0; width: 70%;">News</button>
+            </div>
+          </div>
+
+          <div class="col-lg-3" style="padding: 40px 0;">
+            <a class="col-lg-11 d-flex mx-auto" href="news.html">
+            <img width="90%" class="img-fluid d-flex flex-column mx-auto col-lg-12" src="Pictures/Information-Page/flower-picture.jpg">
+          </a>
+
+            <div class="text-center">
+              <button type="button" class="btn btn-primary btn-lg mx-auto" style="margin: 30px 0 0 0; width: 70%;">Testimonials</button>
+            </div>
+          </div>
+
+          <div class="col-lg-3" style="padding: 40px 0;">
+            <a class="col-lg-11 d-flex mx-auto" href="news.html">
+            <img width="90%" class="img-fluid d-flex flex-column mx-auto col-lg-12" src="Pictures/Information-Page/flower-picture.jpg">
+          </a>
+
+            <div class="text-center">
+              <button type="button" class="btn btn-primary btn-lg mx-auto" style="margin: 30px 0 0 0; width: 70%;">Sales & Discounts</button>
+            </div>
+          </di>
+
+
+
+        </div>
+      </div>
+
+
+        <!-- Pictures of Keany and lawn service
         <div class="row" style="margin: 5% 0 3% 0;">
           <div class="img-bottom-space col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <img src="Pictures/Main-Page/playground-picture.png" id="pictures">
@@ -104,21 +254,21 @@
           <div class="img-bottom-space col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <img src="Pictures/Main-Page/mulch-picture.png" id="pictures">
           </div>
-          <!-- Description of pictures -->
+          Description of pictures
           <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <p class="main-page-opening">
-              This is the main page of the EPL website! This is where we display pictures of our work and customer reviews! Above this, we have displayed pictures of our accomplished work. We have demonstrated to our customers time and time again with our efforts and loyalty, and the results show it. Below these pictures are the top three reviews, and below those are the rest of the customer reviews. This website is mainly informational. We provide information describing our services, what we offer, and why you can trust us. If you ever want your lawn maintained in a timely and professtional manner, or if you have any questions, comments, or concerns about the Etienne Pro Landscaping website, you can go to the "Contact Us" page and do so there. We would love to hear from you!
+
             </p>
           </div>
-        </div>
+        </div>-->
 
-        <!-- Carousel of customer reviews -->
+        <!-- Carousel of customer reviews
         <div class="row" style="margin: 0 0 10% 0;">
           <div style="margin-top: 3%;" class="col-xxl-8 col-xl-8 col-lg-10 col-md-10 col-sm-12 col-xs-12 offset-xxl-2 offset-xl-2 offset-lg-1 offset-md-1">
             <h1 class="text-center review-heading">Top Reviews</h1>
             <p class="text-center" style="font-size: 115%;">Words may not be viewable on smaller screens.</p>
             <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-              <!-- Carousel slides and buttons -->
+               Carousel slides and buttons
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -126,19 +276,19 @@
               </div>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <!-- Picture of review -->
-                  <img src="Pictures/Reviews/gwen_s-review.jpeg" class="img-fluid">
+                  Picture of review
+                  <img src="Pictures/Reviews/gwen_s-Review.jpeg" class="img-fluid">
                 </div>
                 <div class="carousel-item">
-                  <!-- Picture of review -->
-                  <img src="Pictures/Reviews/steven_s-review.jpeg" class="img-fluid">
+                   Picture of review
+                  <img src="Pictures/Reviews/steven_s-Review.jpeg" class="img-fluid">
                 </div>
                 <div class="carousel-item">
-                  <!-- Picture of review -->
-                  <img src="Pictures/Reviews/brittany_s-review.jpeg" class="img-fluid">
+                   Picture of review
+                  <img src="Pictures/Reviews/brittany_s-Review.jpeg" class="img-fluid">
                 </div>
               </div>
-              <!-- Carousel controls -->
+              Carousel controls
               <button  class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
@@ -405,17 +555,15 @@
 
           </div>
 
-        </div>
+        </div>-->
 
 
 
 
-      </div>
-    </div>
-  </div>
+
 
   <!-- EPL website footer -->
-  <footer class="text-center">
+  <footer class="text-center mt-auto">
     <div class="text-center p-3">
       <section style="margin-bottom: 1%; margin-top: 1%;">
         <!-- Facebook -->
@@ -429,6 +577,7 @@
       </section>
       <!-- Contact us and about us links -->
       <section class="links" style="margin-bottom: 1%;">
+        <a href="index.html" class="btn m-1">Home</a>
         <a href="aboutus.html" class="btn m-1">About Us</a>
         <a href="contactus.html" class="btn m-1">Contact Us </a>
         <a href="creditedmaterial.html" class="btn m-1">Credited Material </a>
