@@ -1,14 +1,15 @@
 /* Body */
 
 body {
-  background-image: url(../Pictures/Main-Page/main-page-computer.jpeg);
+  /*background-image: url(../Pictures/Main-Page/main-page-computer.jpeg);*/
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   /* Body font */
   font-family: 'Sarala', sans-serif;
-  font-size: 18px;
+  font-size: 100%;
+  background-color: white;
 }
 
 
@@ -21,31 +22,24 @@ body {
 }
 
 /* Active Tab */
-nav > div.container-fluid > div.collapse > div.navbar-nav > a.active2 {
+nav > div.container-lg > div.collapse > div.navbar-nav > a.active2 {
   color: white;
   background-color: #4b9955;
 }
 
 /* Hover attribute for nav-links */
-nav > div.container-fluid > div.collapse > div.navbar-nav > a:hover {
+nav > div.container-lg > div.collapse > div.navbar-nav > a:hover {
   background-color: #3c7343;
   color: white;
 }
 
 /* Active click attribute for nav-links */
-nav > div.container-fluid > div.collapse > div.navbar-nav > a:active {
+nav > div.container-lg > div.collapse > div.navbar-nav > a:active {
   color: #adadad;
 }
 
 /* Border-radius for nav-links */
-nav > div.container-fluid > div.collapse > div.navbar-nav > a {
-  border-radius: 5px;
-}
-
-/* Nav-link clock styles */
-nav > div.container-fluid > div.collapse > li {
-  color: white;
-  background-color: #4b9955;
+nav > div.container-lg > div.collapse > div.navbar-nav > a {
   border-radius: 5px;
 }
 
@@ -55,7 +49,6 @@ nav > div.container-fluid > div.collapse > li {
 
 /* Footer styles */
 footer {
-  position: absolute;
   width: 100%;
   background-color: rgb(237,233,221);
 }
@@ -78,171 +71,98 @@ footer > div.p-3 > section.links > a:active {
 
 
 
-/* Grid container/Columns styles */
-.shade {
-  background-color: rgba(0,0,0,0.5);
+/* Hero Slider */
+
+#carouselHero .carousel-item.hero{
+  background-image:url("../Pictures/Main-Page/epl-picture.jpg");
+  background-size: 50%;
+  background-position-x: 10%;
 }
 
-.page-padding {
-  padding: 0 2.5% 0 2.5%;
+div.hero > div.row > .carousel-caption {
+  position: relative;
+  left: 58%;
+  top: 100px;
+  background:rgba(0,0,0,0.5);
+  border-radius: 10px;
 }
 
+#carouselHero .carousel-item.trustworthy{
+background-image: url('../Pictures/Others/license-removebg-preview.png');
+background-position-x: 20%;
+background-size: 37%;
+background-repeat: no-repeat;
+}
 
+div.trustworthy > div.row > .carousel-caption {
+  position: relative;
+  left: 51%;
+  top: 90px;
+}
 
-/* Table styles */
+#carouselHero .carousel-item.services{
+  background-image:url('../Pictures/Information-Page/info-background-computer.jpeg');
+}
 
-td {
+div.services > div.row > .carousel-caption {
+  background:rgba(0,0,0,0.8);
+  position: relative;
+  left: 8.5%;
+  top: 100px;
+  border-radius: 10px;
+}
+
+#carouselHero .carousel-item{
+  height:80vh;
+  width:100%;
+  min-height:350px;
+  background:no-repeat;
+  background-size:cover;
+}
+
+#carouselHero .carousel-item .caption{
+  padding:40px;
+  color:white;
+}
+
+#grad-1 {
+  background: linear-gradient(lightblue, green);
+}
+
+ul.col-lg-6 {
+  list-style-type: none;
+}
+
+.carousel-control-prev {
+  background-color: black;
+  width: 5%;
+}
+
+.carousel-control-next {
+  background-color: black;
+  width: 5%;
+}
+
+.back-img {
+  background-image: url('../Pictures/Main-Page/main-page-computer.jpeg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Home Page */
+
+div.intro {
+  padding: 3% 0;
+}
+
+div.hello {
+  background-color: red;
+  padding: 5%;
+  margin: 5% 0px 5% 0px;
+}
+
+a:hover {
+  background-color: #3c7343;
   color: white;
-  font-size: 19px;
-}
-
-
-
-/* Picture styles */
-
-#lawn {
-  margin: 2%;
-  padding: 0 0 0 0;
-  width: 50%;
-  height: auto;
-}
-
-#pictures {
-  width: 100%;
-  height: 100%;
-}
-
-@media screen and (max-width: 1400px) {
-  #lawn {
-    width: 80%;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  #lawn {
-    width: 100%;
-  }
-}
-
-.img-bottom-space {
-  margin: 0 0 4% 0;
-}
-
-
-
-/* Heading styles */
-
-h1.text-center {
-  color: white;
-}
-
-.heading {
-  margin: 2% 0 2% 0;
-}
-
-.review-heading {
-  margin: 0 0 5% 0;
-}
-
-h3 {
-  color: white;
-}
-
-@media screen and (max-width: 1250px) {
-  .heading {
-    font-size: 200%;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .heading {
-    font-size: 185%;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .heading {
-    font-size: 170%;
-  }
-}
-
-
-
-/* Text styles */
-
-p {
-  color: white;
-}
-
-p.review-words {
-  margin: 3% 0 2% 0;
-  text-align: justify;
-}
-
-.main-page-opening {
-  line-height: 2.3;
-  text-indent: 35px;
-  text-align: justify;
-}
-
-small {
-  font-size: 13px;
-}
-
-
-
-/* Top Review styles */
-
-div.carousel {
-  border-radius: 0 0 0 0;
-}
-
-
-
-/* Message styles */
-
-.message {
-  border: 3px solid #dedede;
-  background-color: #4b9966;
-  border-radius: 5px;
-  padding: 10px;
-  margin: 10px 0;
-}
-
-div.message > div.text-center > span.review {
-  word-spacing: 10px;
-  margin: 0 5% 0 0;
-  color: white;
-}
-
-div.message > div.text-center > span.descrp {
-  margin: 0 5% 0 0;
-  color: white;
-}
-
-div.message > div.text-center > span.rate {
-  word-spacing: 10px;
-  color: white;
-}
-
-div.message > div.text-center > span.fa-star {
-  font-size: 20px;
-}
-
-
-
-/* Review Section styles */
-
-.fa {
-  font-size: 25px;
-}
-
-.checked {
-  color: orange;
-}
-
-.five-star {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
