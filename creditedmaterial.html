@@ -28,17 +28,16 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <!-- Bootstrap 5.0 -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-  <!-- Clock -->
-  <script src="CSS-and-Clock.js/clock.js"></script>
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
   <!-- Main navigation bar for EPL website -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-color">
-    <div class="container-fluid">
+  <nav class="navbar navbar-expand-lg navbar-light bg-lawn-color">
+    <div class="container-lg">
       <span class="navbar-brand mb-1 me-5 mx-3 h1">
         <!-- EPL Logo -->
-        <img src="Pictures/Others/epro-logo.jpg" alt="E Pro Landscape" width="" height="">
+        <a class="navbar-brand" href="index.html">
+          <img src="Pictures/Others/epro-logo.jpg" alt="E Pro Landscape">
+        </a>
       </span>
       <!-- Collapse and dropdown toggle -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDrop" aria-controls="navbarDrop" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,122 +46,265 @@
       <div class="collapse navbar-collapse" id="navbarDrop">
         <div class="navbar-nav me-auto  my-2 my-lg-0">
           <!-- Navlinks -->
-          <a class="nav-link text-center me-4" href="index.html">Main Page</a>
-          <a class="nav-link text-center me-4" href="information.html">Information</a>
-          <a class="nav-link text-center me-4" href="contactus.html">Contact Us</a>
-          <a class="nav-link text-center me-4" href="aboutus.html">About Us</a>
-          <a class="nav-link text-center me-4 active2" href="creditedmaterial.html">Credited Material</a>
+          <a class="nav-link text-center me-4" href="about-us.html">About Us</a>
+          <a class="nav-link text-center me-4" href="news-and-info.html">News and Information</a>
+          <a class="nav-link text-center me-4" href="sales-disc.html">Sales & Discounts</a>
+          <a class="nav-link text-center me-4" href="testimonials.html">Testimonials</a>
+          <a class="nav-link text-center me-4" href="contact-us.html">Contact Us</a>
+          <a class="nav-link text-center me-4" href="credited-material.html">Credited Material</a>
         </div>
-        <!-- Clock -->
-        <li class="nav-link text-center">
-          <a id="clock"></a>
-        </li>
       </div>
     </div>
   </nav>
 
-  <div class="container-fluid">
+  <!--<div class="container-lg">
     <div class="row">
-      <div class="shade page-padding col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <!-- Give Credit and/or Thanks -->
-        <h1 class="text-center" style="margin-bottom: 4%"> Credit and Thanks</h1>
+      <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <! Give Credit and/or Thanks
+        <div class="intro bg-light">
+          <div class="container">
+        <h1 class="text-center" style="color: black; padding: 3% 0;"> Credit and Thanks</h1>
+        <p class="intro-text" style="color: black;">This page is built to give credit to the artists for the wonderful work they have created, that are displayed throughout our Etienne Pro Landscpaing website. And to Font Awesome for the icons on the bottom of each page.</p>
+      </div>
+      </div>
 
-        <p class="text-center" style="margin-bottom: 4%">This page is built to give credit to the artists for the wonderful work they have created, that are displayed throughout our Etienne Pro Landscpaing website. And to Font Awesome for the icons on the bottom of each page.</p>
 
-        <div class="row">
-          <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <table height="20%" class="table table-borderless table-responsive" style="border-collapse:separate; border-spacing: 0 5em;">
-              <tbody>
-                <tr class="text-center">
-                  <td class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                    Image by Duncan Andison via <a class="hover active" href="https://stock.adobe.com/contributor/203904150/duncan-andison?load_type=author&prev_url=detail&asset_id=270189511">Adobe Stock</a>
-                    <img height="auto" width="100%" src="Pictures/Main-Page/main-page-computer.jpeg">
-                  </td>
-                  <td class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                    Image by YY apartment via <a class="hover active" href="https://stock.adobe.com/search?creator_id=208221173&filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Bcontent_type%3Aaudio%5D=0&filters%5Binclude_stock_enterprise%5D=1&filters%5Bis_editorial%5D=all&filters%5Bcontent_type%3Aimage%5D=1&order=relevance&safe_search=1&limit=100&search_page=4&search_type=pagination&load_type=page&get_facets=0&asset_id=264025137">Adobe Stock</a>
-                    <img height="auto" width="100%" src="Pictures/Main-Page/5-star-picture.jpeg">
-                  </td>
-                  <td class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                    Image by Jan Will via <a class="hover active" href="https://stock.adobe.com/contributor/7109/jan-will?load_type=author&prev_url=detail&asset_id=9306607">Adobe Stock</a>
-                    <img height="auto" width="100%" src="Pictures/Reviews/review-background-picture.jpeg">
-                  </td>
-                </tr>
 
-                <tr class="text-center">
-                  <td class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                    Image by Kurhan via <a class="hover active" href="https://stock.adobe.com/search?creator_id=9430&filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Binclude_stock_enterprise%5D=1&filters%5Bis_editorial%5D=all&filters%5Bcontent_type%3Aimage%5D=1&order=relevance&safe_search=1&limit=100&search_page=1&search_type=usertyped&k=lawn+mower&acp=&aco=lawn+mower&get_facets=0&asset_id=144862438">Adobe Stock</a>
-                    <img height="auto" width="100%" src="Pictures/Information-Page/info-background-computer.jpeg">
-                  </td>
-                  <td class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                    Image by signjai via <a class="hover active" href="https://stock.adobe.com/contributor/206065768/singjai?load_type=author&prev_url=detail&asset_id=185567263">Adobe Stock</a>
-                    <img height="auto" width="100%" src="Pictures/Information-Page/info-background-tablet.jpeg">
-                  </td>
-                  <td class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                    Image by Kurhan via <a class="hover active" href="https://stock.adobe.com/search?creator_id=9430&filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Binclude_stock_enterprise%5D=1&filters%5Bis_editorial%5D=all&filters%5Bcontent_type%3Aimage%5D=1&order=relevance&safe_search=1&k=gardening+tools+on+green+grass&limit=100&search_page=1&search_type=usertyped&acp=&aco=gardening+tools+on+green+grass&get_facets=0&asset_id=79468478">Adobe Stock</a>
-                    <img height="auto" width="50%" src="Pictures/Information-Page/info-background-phone.jpeg">
-                  </td>
-                </tr>
+      <!https://commons.wikimedia.org/wiki/File:Facebookd.png
+          <div class="album py-5 bg-light">
+            <div class="container">
+              <div class="row g-3">
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                  <div class="card shadow-sm">
+                    <svg class="card-img-top" width="100%" height="0" xmlns="http://www.w3.org/2000/svg"  preserveAspectRatio="xMidYMid slice" focusable="false">
+                      <img src="Pictures/Main-Page/main-page-computer.jpeg">
+                    </svg>
+                    <div class="card-body">
+                      <p class="card-text">Image by Duncan Andison via Adobe Stock</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button onclick="window.location.href='https://stock.adobe.com/contributor/203904150/duncan-andison?load_type=author&prev_url=detail&asset_id=270189511'" type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                  <div class="card shadow-sm">
+                    <svg class="card-img-top" width="100%" height="0" xmlns="http://www.w3.org/2000/svg"  preserveAspectRatio="xMidYMid slice" focusable="false">
+                      <img src="Pictures/Main-Page/5-star-picture.jpeg">
+                    </svg>
+                    <div class="card-body">
+                      <p class="card-text">Image by YY apartment via Adobe Stock</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button onclick="window.location.href='https://stock.adobe.com/search?creator_id=208221173&filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Bcontent_type%3Aaudio%5D=0&filters%5Binclude_stock_enterprise%5D=1&filters%5Bis_editorial%5D=all&filters%5Bcontent_type%3Aimage%5D=1&order=relevance&safe_search=1&limit=100&search_page=4&search_type=pagination&load_type=page&get_facets=0&asset_id=264025137'" type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                  <div class="card shadow-sm">
+                    <svg class="card-img-top" width="100%" height="0" xmlns="http://www.w3.org/2000/svg"  preserveAspectRatio="xMidYMid slice" focusable="false">
+                      <img src="Pictures/Reviews/review-background-picture.jpeg">
+                    </svg>
+                    <div class="card-body">
+                      <p class="card-text">Image by Jan Will via Adobe Stock</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button onclick="window.location.href='https://stock.adobe.com/contributor/7109/jan-will?load_type=author&prev_url=detail&asset_id=9306607'" type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                  <div class="card shadow-sm">
+                    <svg class="card-img-top" width="100%" height="0" xmlns="http://www.w3.org/2000/svg"  preserveAspectRatio="xMidYMid slice" focusable="false">
+                      <img src="Pictures/Information-Page/info-background-computer.jpeg">
+                    </svg>
+                    <div class="card-body">
+                      <p class="card-text">Image by Kurhan via Adobe Stock</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button onclick="window.location.href='https://stock.adobe.com/search?creator_id=9430&filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Binclude_stock_enterprise%5D=1&filters%5Bis_editorial%5D=all&filters%5Bcontent_type%3Aimage%5D=1&order=relevance&safe_search=1&limit=100&search_page=1&search_type=usertyped&k=lawn+mower&acp=&aco=lawn+mower&get_facets=0&asset_id=144862438'" type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                  <div class="card shadow-sm">
+                    <svg class="card-img-top" width="100%" height="0" xmlns="http://www.w3.org/2000/svg"  preserveAspectRatio="xMidYMid slice" focusable="false">
+                      <img src="Pictures/Information-Page/info-background-tablet.jpeg">
+                    </svg>
+                    <div class="card-body">
+                      <p class="card-text">Image by signjai via Adobe Stock</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button onclick="window.location.href='https://stock.adobe.com/contributor/206065768/singjai?load_type=author&prev_url=detail&asset_id=18556726'" type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                  <div class="card shadow-sm">
+                    <svg class="card-img-top" width="100%" height="0" xmlns="http://www.w3.org/2000/svg"  preserveAspectRatio="xMidYMid slice" focusable="false">
+                      <img src="Pictures/Information-Page/info-background-phone.jpeg">
+                    </svg>
+                    <div class="card-body">
+                      <p class="card-text">Image by Kurhan via Adobe Stock</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button onclick="window.location.href='https://stock.adobe.com/search?creator_id=9430&filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Binclude_stock_enterprise%5D=1&filters%5Bis_editorial%5D=all&filters%5Bcontent_type%3Aimage%5D=1&order=relevance&safe_search=1&k=gardening+tools+on+green+grass&limit=100&search_page=1&search_type=usertyped&acp=&aco=gardening+tools+on+green+grass&get_facets=0&asset_id=79468478'" type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                  <div class="card shadow-sm">
+                    <svg class="card-img-top" width="100%" height="0" xmlns="http://www.w3.org/2000/svg"  preserveAspectRatio="xMidYMid slice" focusable="false">
+                      <img src="Pictures/Information-Page/lawn3.jpeg">
+                    </svg>
+                    <div class="card-body">
+                      <p class="card-text">Image by Jamie Hooper via Adobe Stock</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button onclick="window.location.href='https://stock.adobe.com/search?creator_id=202573377&filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Binclude_stock_enterprise%5D=1&filters%5Bis_editorial%5D=all&filters%5Bcontent_type%3Aimage%5D=1&order=relevance&safe_search=1&k=relaxing+garden&search_page=1&search_type=usertyped&acp=&aco=relaxing+garden&get_facets=0&asset_id=70358899'" type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                  <div class="card shadow-sm">
+                    <svg class="card-img-top" width="100%" height="0" xmlns="http://www.w3.org/2000/svg"  preserveAspectRatio="xMidYMid slice" focusable="false">
+                      <img src="Pictures/Information-Page/bribery-picture.jpeg">
+                    </svg>
+                    <div class="card-body">
+                      <p class="card-text">Image by Ngampol via Adobe Stock</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button onclick="window.location.href='https://stock.adobe.com/search?creator_id=208246255&filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Binclude_stock_enterprise%5D=1&filters%5Bis_editorial%5D=all&filters%5Bcontent_type%3Aimage%5D=1&order=relevance&safe_search=1&k=Dishonest+cheating+in+business+illegal+money%2C&limit=100&search_page=1&search_type=usertyped&acp=&aco=Dishonest+cheating+in+business+illegal+money%2C&get_facets=0&asset_id=279083610'" type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                  <div class="card shadow-sm">
+                    <svg class="card-img-top" width="100%" height="0" xmlns="http://www.w3.org/2000/svg"  preserveAspectRatio="xMidYMid slice" focusable="false">
+                      <img src="Pictures/Information-Page/lawn-tools-picture.jpeg">
+                    </svg>
+                    <div class="card-body">
+                      <p class="card-text">Image by K.-U. Häßler via Adobe Stock.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button onclick="window.location.href='https://stock.adobe.com/contributor/200493412/k-u-hassler?load_type=author&prev_url=detail&asset_id=54417478'" type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                  <div class="card shadow-sm">
+                    <svg class="card-img-top" width="100%" height="0" xmlns="http://www.w3.org/2000/svg"  preserveAspectRatio="xMidYMid slice" focusable="false">
+                      <img src="Pictures/Contact-Us/cu-page-background-computer.jpeg">
+                    </svg>
+                    <div class="card-body">
+                      <p class="card-text">Image by Pellinni via Adobe Stock</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button onclick="window.location.href='https://stock.adobe.com/search?k=dandelions+and+other+weeds+among+the+grass.+&search_type=default-view-results&asset_id=313263549'" type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                  <div class="card shadow-sm">
+                    <svg class="card-img-top" width="100%" height="0" xmlns="http://www.w3.org/2000/svg"  preserveAspectRatio="xMidYMid slice" focusable="false">
+                      <img src="Pictures/Contact-Us/@-picture.jpeg">
+                    </svg>
+                    <div class="card-body">
+                      <p class="card-text">Image by sp4764 via Adobe Stock</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button onclick="window.location.href='https://stock.adobe.com/search?creator_id=203467747&filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Bcontent_type%3Aaudio%5D=0&filters%5Binclude_stock_enterprise%5D=1&filters%5Bis_editorial%5D=all&filters%5Bcontent_type%3Aimage%5D=1&order=relevance&safe_search=1&search_page=2&get_facets=0&search_type=pagination&asset_id=65636317'" type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                  <div class="card shadow-sm">
+                    <svg class="card-img-top" width="100%" height="0" xmlns="http://www.w3.org/2000/svg"  preserveAspectRatio="xMidYMid slice" focusable="false">
+                      <img src="Pictures/About-Us/aboutus-background-computer.jpeg">
+                    </svg>
+                    <div class="card-body">
+                      <p class="card-text">Image by Sebastian via Adobe Stock</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button onclick="window.location.href='https://stock.adobe.com/contributor/207012208/sebastian?load_type=author&prev_url=detail&asset_id=206752585'" type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                  <div class="card shadow-sm">
+                    <svg class="card-img-top" width="100%" height="0" xmlns="http://www.w3.org/2000/svg"  preserveAspectRatio="xMidYMid slice" focusable="false">
+                      <img src="Pictures/Credited-Material/creditedmaterial-background-computer.jpeg">
+                    </svg>
+                    <div class="card-body">
+                      <p class="card-text">Image by candy1812 via Adobe Stock</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button onclick="window.location.href='https://stock.adobe.com/contributor/203140117/candy1812?load_type=author&prev_url=detail&asset_id=220632879'" type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                  <div class="card shadow-sm">
+                    <svg class="" width="0" height="0" xmlns="http://www.w3.org/2000/svg"  preserveAspectRatio="xMidYMid slice" focusable="false">
+                      <div class="row text-center">
+                      <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                      <span class="btn text-white  m-4 facebook" style="background-color: #3b5998; cursor: context-menu">
+                        <i class="fab fa-facebook-f"></i>
+                      </span>
+                    </div>
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                      <span class="btn text-white  m-4 email" style="background-color: rgb(240,0,0); cursor: context-menu">
+                        <i class="fas fa-envelope"></i>
+                      </span>
+                    </div>
+                  </div>
+                    </svg>
+                    <div class="card-body">
 
-                <tr class="text-center">
-                  <td class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                    Image by Jamie Hooper via <a class="hover active" href="https://stock.adobe.com/search?creator_id=202573377&filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Binclude_stock_enterprise%5D=1&filters%5Bis_editorial%5D=all&filters%5Bcontent_type%3Aimage%5D=1&order=relevance&safe_search=1&k=relaxing+garden&search_page=1&search_type=usertyped&acp=&aco=relaxing+garden&get_facets=0&asset_id=70358899">Adobe Stock</a>
-                    <img height="auto" width="100%" src="Pictures/Information-Page/lawn3.jpeg">
-                  </td>
-                  <td class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                    Image by Ngampol via <a class="hover active" href="https://stock.adobe.com/search?creator_id=208246255&filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Binclude_stock_enterprise%5D=1&filters%5Bis_editorial%5D=all&filters%5Bcontent_type%3Aimage%5D=1&order=relevance&safe_search=1&k=Dishonest+cheating+in+business+illegal+money%2C&limit=100&search_page=1&search_type=usertyped&acp=&aco=Dishonest+cheating+in+business+illegal+money%2C&get_facets=0&asset_id=279083610">Adobe Stock</a>
-                    <img height="auto" width="100%" src="Pictures/Information-Page/bribery-picture.jpeg">
-                  </td>
-                  <td class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                    Image by K.-U. Häßler via <a class="hover active" href="https://stock.adobe.com/contributor/200493412/k-u-hassler?load_type=author&prev_url=detail&asset_id=54417478">Adobe Stock</a>
-                    <img height="auto" width="100%" src="Pictures/Information-Page/lawn-tools-picture.jpeg">
-                  </td>
-                </tr>
-
-                <tr class="text-center">
-                  <td class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                    Image by Pellinni via <a class="hover active" href="https://stock.adobe.com/search?k=dandelions+and+other+weeds+among+the+grass.+&search_type=default-view-results&asset_id=313263549">Adobe Stock</a>
-                    <img height="auto" width="100%" src="Pictures/Contact-Us/cu-page-background-computer.jpeg">
-                  </td>
-                  <td class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                    Image by sp4764 via <a class="hover active" href="https://stock.adobe.com/search?creator_id=203467747&filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Bcontent_type%3Aaudio%5D=0&filters%5Binclude_stock_enterprise%5D=1&filters%5Bis_editorial%5D=all&filters%5Bcontent_type%3Aimage%5D=1&order=relevance&safe_search=1&search_page=2&get_facets=0&search_type=pagination&asset_id=65636317">Adobe Stock</a>
-                    <img height="auto" width="100%" src="Pictures/Contact-Us/@-picture.jpeg">
-                  </td>
-                  <td class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                    Image by Sebastian via <a class="hover active" href="https://stock.adobe.com/contributor/207012208/sebastian?load_type=author&prev_url=detail&asset_id=206752585">Adobe Stock</a>
-                    <img height="auto" width="100%" src="Pictures/About-Us/aboutus-background-computer.jpeg">
-                  </td>
-                </tr>
-
-                <tr class="text-center">
-                  <td class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                    Image by candy1812 via <a class="hover active" href="https://stock.adobe.com/contributor/203140117/candy1812?load_type=author&prev_url=detail&asset_id=220632879">Adobe Stock</a>
-                    <img height="auto" width="100%" src="Pictures/Credited-Material/creditedmaterial-background-computer.jpeg">
-                  </td>
-
-                  <td class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                    Icons by <a class="hover active" href="https://fontawesome.com">FontAwesome.com</a>
-
-                    <span class="btn text-white btn-floating m-2" style="background-color: #3b5998; cursor: context-menu">
-                      <i class="fab fa-facebook-f"></i>
-                    </span>
-                    <span class="btn text-white btn-floating m-2" style="background-color: rgb(240,0,0); cursor: context-menu">
-                      <i class="fas fa-envelope"></i>
-                    </span>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+                      <p class="card-text">Icons by FontAwesome.com</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button onclick="window.location.href='https://fontawesome.com'" type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
       </div>
     </div>
-  </div>
-
-
-
+  </div>-->
 
   <!-- EPL website footer -->
-  <footer class="text-center">
+  <footer class="text-center mt-auto">
     <div class="text-center p-3">
       <section style="margin-bottom: 1%; margin-top: 1%;">
         <!-- Facebook -->
@@ -176,6 +318,7 @@
       </section>
       <!-- Contact us and about us links -->
       <section class="links" style="margin-bottom: 1%;">
+        <a href="index.html" class="btn m-1">Home</a>
         <a href="aboutus.html" class="btn m-1">About Us</a>
         <a href="contactus.html" class="btn m-1">Contact Us </a>
         <a href="creditedmaterial.html" class="btn m-1">Credited Material </a>
