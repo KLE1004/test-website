@@ -1,57 +1,87 @@
 /* Body */
 
 body {
-  /* background-image: linear-gradient(to right, green, yellow); */
-  background-image: url(../Pictures/Credited-Material/creditedmaterial-background-computer.jpeg);
+  background: #D3D3D3;
+  /*background-image: url(../Pictures/Credited-Material/creditedmaterial-background-computer.jpeg);*/
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   /* Body font */
   font-family: 'Sarala', sans-serif;
-  font-size: 18px;
+  font-size: 100%;
+}
+
+.album {
+  border-radius: 10px;
+    margin: 3% 0;
+}
+
+div.intro {
+  padding: 3% 0;
+  margin: 3% 0 0 0;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.intro-text {
+  font-size: 120%;
 }
 
 
+@media screen and (max-width: 1440px) {
+  .intro-text {
+    font-size: 120%;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .intro-text {
+    font-size: 110%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .nav-link {
+    font-size: 75%;
+  }
+
+
+@media screen and (max-width: 991.5px) {
+  .nav-link {
+    font-size: 100%;
+  }
+}
 
 /* Nav bar */
 
-/* Navbar backhround-color */
-.bg-color {
+/* Navbar background-color */
+.bg-lawn-color {
   background-color: rgb(237,233,221);
 }
 
 /* Active Tab */
-nav > div.container-fluid > div.collapse > div.navbar-nav > a.active2 {
+nav > div.container-lg > div.collapse > div.navbar-nav > a.active2 {
   color: white;
   background-color: #4b9955;
-  border-radius: 5px;
-}
-
-/* Border-radius for nav-links */
-nav > div.container-fluid > div.collapse > div.navbar-nav > a {
-  border-radius: 5px;
-}
-
-/* Nav-link styles */
-nav > div.container-fluid > div.collapse > li {
-  color: white;
-  background-color: #4b9955;
-  border-radius: 5px;
-  font-size: 16.5px;
 }
 
 /* Hover attribute for nav-links */
-nav > div.container-fluid > div.collapse > div.navbar-nav > a:hover {
+nav > div.container-lg > div.collapse > div.navbar-nav > a:hover {
   background-color: #3c7343;
-  border-radius: 5px;
   color: white;
 }
 
 /* Active click attribute for nav-links */
-nav > div.container-fluid > div.collapse > div.navbar-nav > a:active {
+nav > div.container-lg > div.collapse > div.navbar-nav > a:active {
   color: #adadad;
 }
+
+/* Border-radius for nav-links */
+nav > div.container-lg > div.collapse > div.navbar-nav > a {
+  border-radius: 5px;
+}
+
 
 
 
@@ -59,7 +89,6 @@ nav > div.container-fluid > div.collapse > div.navbar-nav > a:active {
 
 /* Footer styles */
 footer {
-  position: absolute;
   width: 100%;
   background-color: rgb(237,233,221);
 }
@@ -118,25 +147,10 @@ a.active:active {
 
 
 
-/* Heading styles */
-
-h1.text-center {
-  color: white;
+span.facebook {
+  width: 45px;
 }
 
-
-
-/* Text styles */
-
-p {
-  color: white;
-}
-
-
-
-/* Table styles */
-
-td {
-  color: white;
-  width: 33.33%;
+span.email {
+  width: 45px;
 }
